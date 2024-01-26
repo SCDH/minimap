@@ -1,0 +1,20 @@
+{
+    "textLength": 100,
+    "annotations": [
+        {
+            "id": 1,
+            "start": 10,
+            "end": 20
+        },
+        {
+            "id": 2,
+            "start": 40,
+            "end": 80
+        },
+        {
+            "id": 3,
+            "start": 15,
+            "end": 42
+        }
+    ]
+}
