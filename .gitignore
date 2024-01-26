@@ -1,0 +1,5 @@
+# Code swap files
+*.sw?
+
+# Generated JavaScript code
+*.js
