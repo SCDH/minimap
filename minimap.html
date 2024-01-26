@@ -1,43 +1,63 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>O HAI</title>
-    <style>
-      #minimap .annotation {
-        height: 10px;
-        color: red;
-        position: relative;
-        left: 0;
-      }
-    </style>
-  </head>
-  <body>
+<html lang="de">
 
-    <div id="annotatedText">
-      <div id="text">
-        <p>...</p>
-        <p>...</p>
-        <p>...</p>
-        <p>...</p>
-        <p>...</p>
-        <p>...</p>
-        <p>...</p>
-        <p>...</p>
-        <p>...</p>
-        <p>...</p>
-        <p>...</p>
-        <p>...</p>
-      </div>
-      <div id="minimap">
-        <div id="annotations">
-          <div class="annotation" style="height: 10%; top: 42%"></div>
-          <div class="annotation"></div>
-          <div class="annotation"></div>
-          <div class="annotation"></div>
-          <!-- ... -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text and Minimap Layout</title>
+    <style>
+        .container {
+            display: flex; /* Use flexbox for layout */
+            align-items: stretch; /* Stretch children to fit the height of the container */
+            width: 500px;
+        }
+
+        .textbox {
+            flex-grow: 1; /* Takes up the remaining space */
+            margin-right: 20px; /* Space between the textbox and the minimap */
+        }
+
+        .minimap {
+            width: 35%; /* Minimap is 35% of the textbox's width */
+            background-color: #ccc; /* Light grey background */
+        }
+
+        .annotation {
+            position: absolute;
+            width: 100%;
+        }
+
+        .annotation-1 {
+            background-color: rgba(0, 0, 255, 0.5);
+        }
+
+        .annotation-2 {
+            background-color: rgba(255, 255, 0, 0.5);
+        }
+
+        .annotation-3 {
+            background-color: rgba(255, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="textbox">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
         </div>
-      </div>
+
+        <div class="minimap" style="position: relative;">
+            <div class="annotation annotation-1" style="top: 10%; height: 10%;"></div>
+            <div class="annotation annotation-2" style="top: 40%; height: 40%;"></div>
+            <div class="annotation annotation-3" style="top: 15%; height: 27%;"></div>
+        </div>
     </div>
 
-  </body>
+</body>
 </html>
