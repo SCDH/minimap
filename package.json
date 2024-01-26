@@ -1,0 +1,10 @@
+{
+  "name": "scdh-minimap",
+  "version": "0.1.0",
+  "description": "Flexible simple minimap",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ]
+}
